@@ -34,4 +34,4 @@ Transforming the plain CSS into flexbox was completed faster than I expected. It
 
 ##CSS grid
 
-In progress
+I had not used CSS grid previously so I had to do some research before I started woring with it. Fortunately CSS grid is pretty easy to understand and use. I had some struggles getting it to work but once it did it was rather easy to apply CSS grid to the whole page.
