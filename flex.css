@@ -13,7 +13,7 @@ body {
 }
 
 .backgroudimage {
-	width: 1000px;
+	max-width: 1000px;
 	height: 720px;
 	/* background-color: #EEE; */
 	position: relative;
@@ -21,50 +21,48 @@ body {
 
 .navcontainer {
 	z-index: 5;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .nav1 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	font-size: 12px;
-	display: inline-block;
 	width: 120px;
 	height: 35px;
-	float: left;
 	text-align: center;
 	color: white;
 	padding-top: 15px;
 }
 
 .nav2 {
-	display: inline-block;
 	width: 200px;
 	height: 50px;
 	background-color: #BBB;
-	position: relative;
-	left: 30%;
 }
 
 .nav3 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	font-size: 12px;
-	display: inline-block;
 	width: 120px;
 	height: 35px;
 	background-color: #31939c;
-	float: right;
 	text-align: center;
 	color: white;
 	padding-top: 15px;
 }
 
 .main {
-	width: 300px;
+	max-width: 300px;
 	height: 380px;
 	position: absolute;
 	top: 200px;
 	margin-left: 100px;
+	display: flex;
+	flex-direction: column;
 }
 
 .main__item {
@@ -99,12 +97,13 @@ body {
 	display: flex;
 	top: 250px;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
 }
 
 .sliderbuttons__prev {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
-	display: inline-block;
 	color: white;
 	font-size: 10px;
 	transform: rotate(-90deg);
@@ -117,12 +116,10 @@ body {
 .sliderbuttons__next {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
-	display: inline-block;
 	color: #999;
 	font-size: 10px;
 	transform: rotate(90deg);
-	transform-origin: right bottom 0;
-	margin-left: 840px;
+	transform-origin: left top 0;
 	border-style: solid;
 	border-width: 0 0 2px 0;
 }
@@ -130,11 +127,9 @@ body {
 .navbar {
 	top: 500px;
 	position: relative;
+	display: flex;
 }
-
 .navbar__item {
-	display: inline-block;
-	margin-right: -4px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 	color: #BBB;
@@ -154,21 +149,24 @@ body {
 }
 
 .tripstext {
-	width: 550px;
+	max-width: 550px;
 	height: 90px;
 	margin: 50px auto 50px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .tripstext__text {
-	display: inline;
 	font-size: 64px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 800;
 }
 
 .tripstext__text--small {
-	width: 300px;
-	display: inline;
+	width: 280px;
+	font-size: 20px;
+	color: #aaa;
+	margin-top: 15px;
 }
 
 .tripmenu {
@@ -178,53 +176,52 @@ body {
 	float: right;
 }
 
-.tripitem {
-	width: 600px;
-	height: 420px;
-	margin: 0 auto 50px;
-}
-
 .tripitem--1 {
 	width: 600px;
 	height: 420px;
 	margin: 0 15% 50px;
+	display: flex;
 }
 
 .tripitem--2 {
 	width: 600px;
 	height: 420px;
 	margin: 0 35% 50px;
+	display: flex;
 }
 
 .tripitem--3 {
 	width: 600px;
 	height: 420px;
 	margin: 0 5% 50px;
+	display: flex;
 }
 
 .tripitem--4 {
 	width: 600px;
 	height: 420px;
 	margin: 0 30% 50px;
+	display: flex;
 }
 
 .tripitem--5 {
 	width: 600px;
 	height: 420px;
 	margin: 0 15% 50px;
+	display: flex;
 }
 
 .tripitem__image {
 	height: 400px;
 	width: 300px;
-	float: left;
 }
 
 .tripitem__content {
 	width: 200px;
 	height: 300px;
-	float: right;
 	margin: 50px;
+	display: flex;
+	flex-direction: column;
 }
 
 .tripitem__content-image {
@@ -260,17 +257,19 @@ body {
 }
 
 .reviews {
-	width: 1000px;
+	max-width: 1000px;
 	height: 550px;
 	background-color: #333;
 	padding-top: 50px;
 }
 
 .reviews__text {
-	width: 780px;
+	max-width: 700px;
 	height: 80px;
-	margin: auto;
+	margin-left: 110px;
 	font-family: 'Raleway', sans-serif;
+	display: flex;
+	justify-content: space-between
 }
 
 .reviews__text--big {
@@ -282,14 +281,15 @@ body {
 .reviews__text--small {
 	font-size: 15px;
 	color: #AAA;
-	float: right;
-	margin-top: -40px;
+	margin-top: 15px;
 }
 
 .reviews__image {
 	width: 780px;
 	height: 520px;
 	margin-left: 110px;
+	display: flex;
+	flex-direction: column;
 }
 
 .reviews__smile {
@@ -332,7 +332,9 @@ body {
 
 .blog {
 	margin: 200px auto 80px;
-	width: 840px;
+	max-width: 840px;
+	display: flex;
+	flex-direction: column;
 }
 
 .blog__head {
@@ -347,18 +349,18 @@ body {
 	border-width: 0 0 2px 0;
 	border-color: #BBB;
 	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .blog__title {
-	display: inline-block;
 	font-size: 20px;
-	width: 380px;
+	width: 250px;
 	font-family: 'Raleway', sans-serif;
 	color: #575b61;
 }
 
 .blog__date {
-	display: inline-block;
 	font-family: 'Raleway', sans-serif;
 	color: #d2bda7;
 	font-size: 12px;
@@ -366,14 +368,12 @@ body {
 }
 
 .blog__button {
-	display: inline-block;
 	border-style: solid;
 	border-width: 2px;
 	font-size: 8px;
 	font-family: 'Raleway', sans-serif;
 	padding: 10px 18px;
 	font-weight: 800;
-	margin-left: 242px;
 	margin-bottom: 20px;
 }
 
@@ -388,24 +388,24 @@ body {
 .email__container {
 	position: relative;
 	top: 135px;
-	width: 700px;
+	max-width: 700px;
 	height: 130px;
 	background-color: white;
 	margin: 140px auto 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .email__item {
-	width: 300px;
 	height: 130px;
-	display: inline-block;
-	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .email__item--small {
 	background-color: #31939c;
 	width: 92px;
 	height: 130px;
-	display: inline-block;
 }
 
 .email__name {
@@ -447,32 +447,32 @@ body {
 .footer {
 	background-color: #445;
 	padding-top: 90px;
+	padding-bottom: 40px;
 }
 
 .footer__container {
-	width: 850px;
+	max-width: 850px;
 	margin: auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 .footer__item {
-	width: 340px;
 	height: 180px;
-	display: inline-block;
-	position: relative;
 	top: -32px;
 	color: darkcyan;
+	display: flex;
+	flex-direction: column;
 }
 
 .footer__item--logo {
-	width: 340px;
 	height: 180px;
-	display: inline-block;
 }
 
 .footer__item--small {
-	width: 162px;
 	height: 180px;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 }
 
 .footer__item--cyan {
