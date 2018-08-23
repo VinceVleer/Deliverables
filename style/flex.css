@@ -285,9 +285,9 @@ body {
 }
 
 .reviews__image {
-	width: 780px;
+	max-width: 780px;
 	height: 520px;
-	margin-left: 110px;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
 }
