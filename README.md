@@ -30,4 +30,8 @@ Writing the styling in plain CSS was pretty difficult. Positioning elements was 
 
 ##Flexbox
 
+Transforming the plain CSS into flexbox was completed faster than I expected. It was mainly an issue of replacing the floats with flexbox to automatically allign certain items along their horizontal or vertical axis.
+
+##CSS grid
+
 In progress
