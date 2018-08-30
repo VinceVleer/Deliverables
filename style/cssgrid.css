@@ -103,6 +103,7 @@ body {
 	position: relative;
 	display: grid;
 	grid-template-columns: auto auto;
+	margin: auto;
 }
 
 .sliderbuttons__prev {
